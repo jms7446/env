@@ -115,6 +115,7 @@ export MAIN_UB='192.168.219.100'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias python='python3'
 alias hs='/sbin/ifconfig; python -m SimpleHTTPServer 7778'
 alias ssh-my-home='ssh $MY_HOME'
 alias ssh-main-ub='ssh $MAIN_UB'
