@@ -100,6 +100,9 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+export MY_HOME='122.40.245.32'
+export MAIN_UB='192.168.219.100'
+
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -112,5 +115,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias hs='/sbin/ifconfig; python -m SimpleHTTPServer 7778'
+alias ssh-my-home='ssh $MY_HOME'
+alias ssh-main-ub='ssh $MAIN_UB'
+
 #
 bindkey -v
+source /Users/msjung/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

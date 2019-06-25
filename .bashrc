@@ -119,23 +119,15 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-
 export EDITOR=vim
 set -o vi
-
-export SCALA_HOME=/usr/local/opt/scala/idea
-export H9_ID=chris.j
-export user=chris
 
 # ls 에서 색깔 사용
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 export PATH=$PATH:$JAVA_HOME/bin
-export PATH=$PATH:$HADOOP_INSTALL/bin
 export PATH=$HOME/sbt/bin:$PATH
-
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home
 
 export MY_HOME='122.40.245.32'
