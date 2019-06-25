@@ -132,47 +132,26 @@ export user=chris
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-
-#export JAVA_HOME=/opt/java/jdk1.6.0_34
-#export HADOOP_INSTALL=/usr/local/hadoop-0.22.0
-
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:$HADOOP_INSTALL/bin
-export PATH=/Users/msjung/sbt/bin:$PATH
-#export PATH=$PATH:/Users/msjung/scala-2.10.3/bin 
+export PATH=$HOME/sbt/bin:$PATH
 
-#export PATH=/home/msjung/epd/bin:$PATH
-#export PATH=/Users/msjung/anaconda/bin:$PATH
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home
-
-# for MySQLdb
-#export DYLD_FALLBACK_LIBRARY_PATH=$HOME/anaconda2/lib/:$DYLD_FALLBACK_LIBRARY_PATH
 
 export MY_HOME='122.40.245.32'
 export MAIN_UB='192.168.219.100'
 
 alias hs='/sbin/ifconfig; python -m SimpleHTTPServer 7778'
-#alias ssh-jms='ssh jms7446.iptime.org'
-#alias ssh-ubuntu='ssh msjung@$MY_HOME -p 1022'
 alias ssh-my-home='ssh $MY_HOME'
 alias ssh-main-ub='ssh $MAIN_UB'
-
-#export AWS_SERVER="ec2-user@ec2-52-79-115-73.ap-northeast-2.compute.amazonaws.com"
-export AWS_SERVER="ubuntu@ec2-13-125-236-41.ap-northeast-2.compute.amazonaws.com"
-export AWS_UBUNTU="ubuntu@ec2-13-125-236-41.ap-northeast-2.compute.amazonaws.com"
-alias ssh-aws="ssh -i ~/aws/aws_keypair.pem $AWS_SERVER"
-#alias ssh-uaws="ssh -i ~/aws/aws_keypair.pem $AWS_UBUNTU"
-alias scp-aws="scp -i ~/aws/aws_keypair.pem"
 
 export WORKON_HOME=~/Envs
 
 source /usr/local/bin/virtualenvwrapper.sh
 
 ## Google Cloud
-export GOOGLE_CLOUD_SDK_PATH=/Users/msjung/program/google-cloud-sdk
+export GOOGLE_CLOUD_SDK_PATH=$HOME/program/google-cloud-sdk
 export PATH=$PATH:$GOOGLE_CLOUD_SDK_PATH/bin
 
-#alias gcloud-i1='gcloud compute --project "local-arcade-211402" ssh --zone "asia-northeast1-b" "jms7446@instance-1"'
 alias ssh-gce='gcloud compute --project "kaggle-230211" ssh --zone "asia-northeast1-b" "instance-1"'
 
